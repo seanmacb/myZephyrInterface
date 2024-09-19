@@ -2,7 +2,7 @@
 
 
 ## Requirements
-- The `[ts_planning_tool](https://github.com/lsst-ts/ts_planning_tool/tree/develop)` package, which allows you to use the Zephyr Scale API
+- The [ts_planning_tool](https://github.com/lsst-ts/ts_planning_tool/tree/develop) package, which allows you to use the Zephyr Scale API
 - A text file named credentials.txt that contains the following three lines at the top of the file:
     - `ZEPHYR_TOKEN`: A token for the Zephyr Scale API
     - `JIRA_API_TOKEN`: A token for the JIRA api
