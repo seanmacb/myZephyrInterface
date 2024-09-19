@@ -1,0 +1,3 @@
+# packages in environment at /Users/sean/miniforge3/envs/myjlabenv:
+#
+# Name                    Version                   Build  Channel
