@@ -1,276 +1,273 @@
-name: myjlabenv
-channels:
-  - conda-forge
-dependencies:
-  - aiohappyeyeballs=2.4.0=pyhd8ed1ab_0
-  - aiohttp=3.10.5=py312h024a12e_1
-  - aiosignal=1.3.1=pyhd8ed1ab_0
-  - anyio=4.1.0=pyhd8ed1ab_0
-  - appnope=0.1.3=pyhd8ed1ab_0
-  - argon2-cffi=23.1.0=pyhd8ed1ab_0
-  - argon2-cffi-bindings=21.2.0=py312h02f2b3b_4
-  - arrow=1.3.0=pyhd8ed1ab_0
-  - asttokens=2.4.1=pyhd8ed1ab_0
-  - async-lru=2.0.4=pyhd8ed1ab_0
-  - aws-c-auth=0.7.8=h251af53_3
-  - aws-c-cal=0.6.9=hb1772db_2
-  - aws-c-common=0.9.10=h93a5062_0
-  - aws-c-compression=0.2.17=hb1772db_7
-  - aws-c-event-stream=0.3.2=hb5e90b3_8
-  - aws-c-http=0.7.15=hd747585_0
-  - aws-c-io=0.13.36=h1112932_3
-  - aws-c-mqtt=0.10.0=h3e71869_1
-  - aws-c-s3=0.4.7=ha7f36e9_0
-  - aws-c-sdkutils=0.1.13=hb1772db_0
-  - aws-checksums=0.1.17=hb1772db_6
-  - aws-crt-cpp=0.25.1=hf9aaa6e_1
-  - aws-sdk-cpp=1.11.210=h4d8a066_6
-  - babel=2.14.0=pyhd8ed1ab_0
-  - beautifulsoup4=4.12.2=pyha770c72_0
-  - bleach=6.1.0=pyhd8ed1ab_0
-  - blosc=1.21.5=hc338f07_0
-  - brotli=1.1.0=hb547adb_1
-  - brotli-bin=1.1.0=hb547adb_1
-  - brotli-python=1.1.0=py312h9f69965_1
-  - bzip2=1.0.8=h93a5062_5
-  - c-ares=1.33.1=hd74edd7_0
-  - c-blosc2=2.12.0=ha57e6be_0
-  - ca-certificates=2024.8.30=hf0a4a13_0
-  - cached-property=1.5.2=hd8ed1ab_1
-  - cached_property=1.5.2=pyha770c72_1
-  - certifi=2024.8.30=pyhd8ed1ab_0
-  - cffi=1.16.0=py312h8e38eb3_0
-  - cfitsio=4.4.0=h808cd33_1
-  - charset-normalizer=3.3.2=pyhd8ed1ab_0
-  - colorama=0.4.6=pyhd8ed1ab_0
-  - comm=0.1.4=pyhd8ed1ab_0
-  - configparser=7.0.0=pyhd8ed1ab_0
-  - cycler=0.12.1=pyhd8ed1ab_0
-  - debugpy=1.8.0=py312h9f69965_1
-  - decorator=5.1.1=pyhd8ed1ab_0
-  - defusedxml=0.7.1=pyhd8ed1ab_0
-  - easyquery=0.4.0=pyhd8ed1ab_0
-  - entrypoints=0.4=pyhd8ed1ab_0
-  - exceptiongroup=1.2.0=pyhd8ed1ab_0
-  - executing=2.0.1=pyhd8ed1ab_0
-  - fqdn=1.5.1=pyhd8ed1ab_0
-  - freetype=2.12.1=hadb7bae_2
-  - frozenlist=1.4.1=py312h024a12e_1
-  - gcr=0.9.2=pyhd8ed1ab_0
-  - gflags=2.2.2=hc88da5d_1004
-  - glog=0.6.0=h6da1cb0_0
-  - h5py=3.11.0=nompi_py312h903599c_102
-  - hdf5=1.14.3=nompi_h751145d_101
-  - healpy=1.16.6=py312hbe1e416_5
-  - icu=73.2=hc8870d7_0
-  - importlib-metadata=7.0.0=pyha770c72_0
-  - importlib_metadata=7.0.0=hd8ed1ab_0
-  - importlib_resources=6.1.1=pyhd8ed1ab_0
-  - iniconfig=2.0.0=pyhd8ed1ab_0
-  - ipykernel=6.26.0=pyh3cd1d5f_0
-  - ipython=8.18.1=pyh707e725_3
-  - isoduration=20.11.0=pyhd8ed1ab_0
-  - jedi=0.19.1=pyhd8ed1ab_0
-  - jinja2=3.1.2=pyhd8ed1ab_1
-  - json5=0.9.14=pyhd8ed1ab_0
-  - jsonpointer=2.4=py312h81bd7bf_3
-  - jsonschema=4.20.0=pyhd8ed1ab_0
-  - jsonschema-specifications=2023.11.2=pyhd8ed1ab_0
-  - jsonschema-with-format-nongpl=4.20.0=pyhd8ed1ab_0
-  - jupyter-lsp=2.2.1=pyhd8ed1ab_0
-  - jupyter_client=8.6.0=pyhd8ed1ab_0
-  - jupyter_core=5.5.0=py312h81bd7bf_0
-  - jupyter_events=0.9.0=pyhd8ed1ab_0
-  - jupyter_server=2.12.1=pyhd8ed1ab_0
-  - jupyter_server_terminals=0.5.0=pyhd8ed1ab_0
-  - jupyterlab_pygments=0.3.0=pyhd8ed1ab_0
-  - jupyterlab_server=2.25.2=pyhd8ed1ab_0
-  - kiwisolver=1.4.5=py312h389731b_1
-  - krb5=1.21.3=h237132a_0
-  - lcms2=2.16=ha0e7c42_0
-  - lerc=4.0.0=h9a09cb3_0
-  - libabseil=20230802.1=cxx17_h13dd4ca_0
-  - libaec=1.1.3=hebf3989_0
-  - libarrow=14.0.2=h4646434_1_cpu
-  - libarrow-acero=14.0.2=h13dd4ca_1_cpu
-  - libarrow-dataset=14.0.2=h13dd4ca_1_cpu
-  - libarrow-flight=14.0.2=ha94d253_1_cpu
-  - libarrow-flight-sql=14.0.2=h39a9b85_1_cpu
-  - libarrow-gandiva=14.0.2=hf757142_1_cpu
-  - libarrow-substrait=14.0.2=h7fd9903_1_cpu
-  - libblas=3.9.0=20_osxarm64_openblas
-  - libbrotlicommon=1.1.0=hb547adb_1
-  - libbrotlidec=1.1.0=hb547adb_1
-  - libbrotlienc=1.1.0=hb547adb_1
-  - libcblas=3.9.0=20_osxarm64_openblas
-  - libcrc32c=1.1.2=hbdafb3b_0
-  - libcurl=8.7.1=h2d989ff_0
-  - libcxx=16.0.6=h4653b0c_0
-  - libdeflate=1.19=hb547adb_0
-  - libedit=3.1.20191231=hc8eb9b7_2
-  - libev=4.33=h93a5062_2
-  - libevent=2.1.12=h2757513_1
-  - libexpat=2.5.0=hb7217d7_1
-  - libffi=3.4.2=h3422bc3_5
-  - libgfortran=5.0.0=13_2_0_hd922786_1
-  - libgfortran5=13.2.0=hf226fd6_1
-  - libgoogle-cloud=2.12.0=hfb399a7_4
-  - libgrpc=1.59.3=h9560976_0
-  - libiconv=1.17=h0d3ecfb_2
-  - libjpeg-turbo=3.0.0=hb547adb_1
-  - liblapack=3.9.0=20_osxarm64_openblas
-  - libllvm15=15.0.7=h2621b3d_4
-  - libnghttp2=1.58.0=ha4dd798_1
-  - libopenblas=0.3.25=openmp_h6c19121_0
-  - libparquet=14.0.2=hf6ce1d5_1_cpu
-  - libpng=1.6.39=h76d750c_0
-  - libprotobuf=4.24.4=h810fc01_0
-  - libre2-11=2023.09.01=h741fcf5_1
-  - libsodium=1.0.18=h27ca646_1
-  - libsqlite=3.44.2=h091b4b1_0
-  - libssh2=1.11.0=h7a5bd25_0
-  - libthrift=0.19.0=h026a170_1
-  - libtiff=4.6.0=ha8a6c65_2
-  - libutf8proc=2.8.0=h1a8c8d9_0
-  - libwebp-base=1.3.2=hb547adb_0
-  - libxcb=1.15=hf346824_0
-  - libxml2=2.12.7=ha661575_1
-  - libzlib=1.2.13=h53f4e23_5
-  - llvm-openmp=17.0.6=hcd81f8e_0
-  - lsstdesc-gcr-catalogs=1.6.0=pyhd8ed1ab_0
-  - lz4-c=1.9.4=hb7217d7_0
-  - markupsafe=2.1.3=py312h02f2b3b_1
-  - matplotlib-base=3.8.2=py312hba9b818_0
-  - matplotlib-inline=0.1.6=pyhd8ed1ab_0
-  - mistune=3.0.2=pyhd8ed1ab_0
-  - multidict=6.1.0=py312h88e9dfa_0
-  - munkres=1.1.4=pyh9f0ad1d_0
-  - nbclient=0.8.0=pyhd8ed1ab_0
-  - nbconvert-core=7.12.0=pyhd8ed1ab_0
-  - nbformat=5.9.2=pyhd8ed1ab_0
-  - ncurses=6.4=h463b476_2
-  - nest-asyncio=1.5.8=pyhd8ed1ab_0
-  - notebook-shim=0.2.3=pyhd8ed1ab_0
-  - nptdms=1.9.0=pyhd8ed1ab_0
-  - numexpr=2.10.0=py312h8ae5369_0
-  - openjpeg=2.5.0=h4c1507b_3
-  - openssl=3.3.2=h8359307_0
-  - orc=1.9.2=h7c018df_0
-  - overrides=7.4.0=pyhd8ed1ab_0
-  - pandocfilters=1.5.0=pyhd8ed1ab_0
-  - parso=0.8.3=pyhd8ed1ab_0
-  - pexpect=4.8.0=pyh1a96a4e_2
-  - pickleshare=0.7.5=py_1003
-  - pip=23.3.1=pyhd8ed1ab_0
-  - pkgutil-resolve-name=1.3.10=pyhd8ed1ab_1
-  - platformdirs=4.1.0=pyhd8ed1ab_0
-  - playsound=1.3.0=pyhd8ed1ab_0
-  - pluggy=1.5.0=pyhd8ed1ab_0
-  - prometheus_client=0.19.0=pyhd8ed1ab_0
-  - prompt-toolkit=3.0.42=pyha770c72_0
-  - psutil=5.9.5=py312h02f2b3b_1
-  - pthread-stubs=0.4=h27ca646_1001
-  - ptyprocess=0.7.0=pyhd3deb0d_0
-  - pure_eval=0.2.2=pyhd8ed1ab_0
-  - py-cpuinfo=9.0.0=pyhd8ed1ab_0
-  - pyarrow=14.0.2=py312h14a4a34_1_cpu
-  - pycparser=2.21=pyhd8ed1ab_0
-  - pygments=2.17.2=pyhd8ed1ab_0
-  - pyobjc-core=10.1=py312h9d22092_0
-  - pyobjc-framework-cocoa=10.1=py312h9d22092_0
-  - pysocks=1.7.1=pyha2e5f31_6
-  - pytables=3.9.2=py312h9aef7b8_1
-  - pytest=8.3.3=pyhd8ed1ab_0
-  - pytest-runner=6.0.0=pyhd8ed1ab_0
-  - python=3.12.0=h47c9636_0_cpython
-  - python-dotenv=1.0.1=pyhd8ed1ab_0
-  - python-fastjsonschema=2.19.0=pyhd8ed1ab_0
-  - python-json-logger=2.0.7=pyhd8ed1ab_0
-  - python-tzdata=2023.3=pyhd8ed1ab_0
-  - python_abi=3.12=4_cp312
-  - pyzmq=25.1.2=py312h1edf716_0
-  - re2=2023.09.01=h4cba328_1
-  - readline=8.2=h92ec313_1
-  - referencing=0.32.0=pyhd8ed1ab_0
-  - rfc3339-validator=0.1.4=pyhd8ed1ab_0
-  - rfc3986-validator=0.1.1=pyh9f0ad1d_0
-  - rpds-py=0.13.2=py312h5280bc4_0
-  - send2trash=1.8.2=pyhd1c38e8_0
-  - setuptools=68.2.2=pyhd8ed1ab_0
-  - six=1.16.0=pyh6c4a22f_0
-  - slack-sdk=3.27.1=pyha770c72_0
-  - slack_sdk=3.27.1=hd8ed1ab_0
-  - snappy=1.1.10=hd04f947_1
-  - sniffio=1.3.0=pyhd8ed1ab_0
-  - soupsieve=2.5=pyhd8ed1ab_1
-  - stack_data=0.6.2=pyhd8ed1ab_0
-  - terminado=0.18.0=pyh31c8845_0
-  - tinycss2=1.2.1=pyhd8ed1ab_0
-  - tk=8.6.13=h5083fa2_1
-  - tomli=2.0.1=pyhd8ed1ab_0
-  - tornado=6.3.3=py312h02f2b3b_1
-  - traitlets=5.14.0=pyhd8ed1ab_0
-  - types-python-dateutil=2.8.19.14=pyhd8ed1ab_0
-  - typing-extensions=4.9.0=hd8ed1ab_0
-  - typing_extensions=4.9.0=pyha770c72_0
-  - typing_utils=0.1.0=pyhd8ed1ab_0
-  - uri-template=1.3.0=pyhd8ed1ab_0
-  - wcwidth=0.2.12=pyhd8ed1ab_0
-  - webcolors=1.13=pyhd8ed1ab_0
-  - webencodings=0.5.1=pyhd8ed1ab_2
-  - websocket-client=1.7.0=pyhd8ed1ab_0
-  - wheel=0.42.0=pyhd8ed1ab_0
-  - xorg-libxau=1.0.11=hb547adb_0
-  - xorg-libxdmcp=1.1.3=h27ca646_0
-  - xz=5.2.6=h57fd34a_0
-  - yaml=0.2.5=h3422bc3_2
-  - yarl=1.9.4=py312h024a12e_1
-  - zeromq=4.3.5=h965bd2d_0
-  - zipp=3.17.0=pyhd8ed1ab_0
-  - zlib-ng=2.0.7=h1a8c8d9_0
-  - zstd=1.5.5=h4f39d0f_0
-  - pip:
-      - asdf==3.4.0
-      - asdf-astropy==0.6.1
-      - asdf-coordinates-schemas==0.3.0
-      - asdf-standard==1.1.1
-      - asdf-transform-schemas==0.5.0
-      - asdf-wcs-schemas==0.4.0
-      - astro-datalab==2.22.1
-      - astropy==6.1.3
-      - astropy-iers-data==0.2024.9.2.0.33.23
-      - attrs==24.2.0
-      - chardet==5.2.0
-      - contourpy==1.3.0
-      - fonttools==4.53.1
-      - genson==1.3.0
-      - gwcs==0.21.0
-      - httplib2==0.22.0
-      - idna==3.8
-      - jmespath==1.0.1
-      - jupyter-manager==0.0.4
-      - jupyterlab==4.0.0
-      - jupyterlab-code-formatter==3.0.2
-      - jupyterlab-execute-time==3.1.2
-      - matplotlib==3.9.2
-      - ndcube==2.2.2
-      - numpy==2.1.0
-      - opencv-python==4.9.0.80
-      - packaging==24.1
-      - pandas==2.2.2
-      - pillow==10.4.0
-      - pycurl==7.45.3
-      - pycurl-requests==0.5.0
-      - pyerfa==2.0.1.4
-      - pyparsing==3.1.4
-      - python-dateutil==2.9.0.post0
-      - pytz==2024.1
-      - pyvo==1.5.2
-      - pyyaml==6.0.2
-      - requests==2.32.3
-      - scipy==1.14.1
-      - semantic-version==2.10.0
-      - specutils==1.16.0
-      - tzdata==2024.1
-      - urllib3==2.2.2
-prefix: /Users/sean/miniforge3/envs/myjlabenv
+# packages in environment at /Users/sean/miniforge3/envs/myjlabenv:
+# # conda create --name <env> --file <this file>
+# Name                    Version                   Build  Channel
+aiohappyeyeballs          2.4.0              pyhd8ed1ab_0    conda-forge
+aiohttp                   3.10.5          py312h024a12e_1    conda-forge
+aiosignal                 1.3.1              pyhd8ed1ab_0    conda-forge
+anyio                     4.1.0              pyhd8ed1ab_0    conda-forge
+appnope                   0.1.3              pyhd8ed1ab_0    conda-forge
+argon2-cffi               23.1.0             pyhd8ed1ab_0    conda-forge
+argon2-cffi-bindings      21.2.0          py312h02f2b3b_4    conda-forge
+arrow                     1.3.0              pyhd8ed1ab_0    conda-forge
+asdf                      3.4.0                    pypi_0    pypi
+asdf-astropy              0.6.1                    pypi_0    pypi
+asdf-coordinates-schemas  0.3.0                    pypi_0    pypi
+asdf-standard             1.1.1                    pypi_0    pypi
+asdf-transform-schemas    0.5.0                    pypi_0    pypi
+asdf-wcs-schemas          0.4.0                    pypi_0    pypi
+astro-datalab             2.22.1                   pypi_0    pypi
+astropy                   6.1.3                    pypi_0    pypi
+astropy-iers-data         0.2024.9.2.0.33.23          pypi_0    pypi
+asttokens                 2.4.1              pyhd8ed1ab_0    conda-forge
+async-lru                 2.0.4              pyhd8ed1ab_0    conda-forge
+attrs                     24.2.0                   pypi_0    pypi
+aws-c-auth                0.7.8                h251af53_3    conda-forge
+aws-c-cal                 0.6.9                hb1772db_2    conda-forge
+aws-c-common              0.9.10               h93a5062_0    conda-forge
+aws-c-compression         0.2.17               hb1772db_7    conda-forge
+aws-c-event-stream        0.3.2                hb5e90b3_8    conda-forge
+aws-c-http                0.7.15               hd747585_0    conda-forge
+aws-c-io                  0.13.36              h1112932_3    conda-forge
+aws-c-mqtt                0.10.0               h3e71869_1    conda-forge
+aws-c-s3                  0.4.7                ha7f36e9_0    conda-forge
+aws-c-sdkutils            0.1.13               hb1772db_0    conda-forge
+aws-checksums             0.1.17               hb1772db_6    conda-forge
+aws-crt-cpp               0.25.1               hf9aaa6e_1    conda-forge
+aws-sdk-cpp               1.11.210             h4d8a066_6    conda-forge
+babel                     2.14.0             pyhd8ed1ab_0    conda-forge
+beautifulsoup4            4.12.2             pyha770c72_0    conda-forge
+bleach                    6.1.0              pyhd8ed1ab_0    conda-forge
+blosc                     1.21.5               hc338f07_0    conda-forge
+brotli                    1.1.0                hb547adb_1    conda-forge
+brotli-bin                1.1.0                hb547adb_1    conda-forge
+brotli-python             1.1.0           py312h9f69965_1    conda-forge
+bzip2                     1.0.8                h93a5062_5    conda-forge
+c-ares                    1.33.1               hd74edd7_0    conda-forge
+c-blosc2                  2.12.0               ha57e6be_0    conda-forge
+ca-certificates           2024.8.30            hf0a4a13_0    conda-forge
+cached-property           1.5.2                hd8ed1ab_1    conda-forge
+cached_property           1.5.2              pyha770c72_1    conda-forge
+certifi                   2024.8.30          pyhd8ed1ab_0    conda-forge
+cffi                      1.16.0          py312h8e38eb3_0    conda-forge
+cfitsio                   4.4.0                h808cd33_1    conda-forge
+chardet                   5.2.0                    pypi_0    pypi
+charset-normalizer        3.3.2              pyhd8ed1ab_0    conda-forge
+colorama                  0.4.6              pyhd8ed1ab_0    conda-forge
+comm                      0.1.4              pyhd8ed1ab_0    conda-forge
+configparser              7.0.0              pyhd8ed1ab_0    conda-forge
+contourpy                 1.3.0                    pypi_0    pypi
+cycler                    0.12.1             pyhd8ed1ab_0    conda-forge
+debugpy                   1.8.0           py312h9f69965_1    conda-forge
+decorator                 5.1.1              pyhd8ed1ab_0    conda-forge
+defusedxml                0.7.1              pyhd8ed1ab_0    conda-forge
+easyquery                 0.4.0              pyhd8ed1ab_0    conda-forge
+entrypoints               0.4                pyhd8ed1ab_0    conda-forge
+exceptiongroup            1.2.0              pyhd8ed1ab_0    conda-forge
+executing                 2.0.1              pyhd8ed1ab_0    conda-forge
+fonttools                 4.53.1                   pypi_0    pypi
+fqdn                      1.5.1              pyhd8ed1ab_0    conda-forge
+freetype                  2.12.1               hadb7bae_2    conda-forge
+frozenlist                1.4.1           py312h024a12e_1    conda-forge
+gcr                       0.9.2              pyhd8ed1ab_0    conda-forge
+genson                    1.3.0                    pypi_0    pypi
+gflags                    2.2.2             hc88da5d_1004    conda-forge
+glog                      0.6.0                h6da1cb0_0    conda-forge
+gwcs                      0.21.0                   pypi_0    pypi
+h5py                      3.11.0          nompi_py312h903599c_102    conda-forge
+hdf5                      1.14.3          nompi_h751145d_101    conda-forge
+healpy                    1.16.6          py312hbe1e416_5    conda-forge
+httplib2                  0.22.0                   pypi_0    pypi
+icu                       73.2                 hc8870d7_0    conda-forge
+idna                      3.8                      pypi_0    pypi
+importlib-metadata        7.0.0              pyha770c72_0    conda-forge
+importlib_metadata        7.0.0                hd8ed1ab_0    conda-forge
+importlib_resources       6.1.1              pyhd8ed1ab_0    conda-forge
+iniconfig                 2.0.0              pyhd8ed1ab_0    conda-forge
+ipykernel                 6.26.0             pyh3cd1d5f_0    conda-forge
+ipython                   8.18.1             pyh707e725_3    conda-forge
+isoduration               20.11.0            pyhd8ed1ab_0    conda-forge
+jedi                      0.19.1             pyhd8ed1ab_0    conda-forge
+jinja2                    3.1.2              pyhd8ed1ab_1    conda-forge
+jmespath                  1.0.1                    pypi_0    pypi
+json5                     0.9.14             pyhd8ed1ab_0    conda-forge
+jsonpointer               2.4             py312h81bd7bf_3    conda-forge
+jsonschema                4.20.0             pyhd8ed1ab_0    conda-forge
+jsonschema-specifications 2023.11.2          pyhd8ed1ab_0    conda-forge
+jsonschema-with-format-nongpl 4.20.0             pyhd8ed1ab_0    conda-forge
+jupyter-lsp               2.2.1              pyhd8ed1ab_0    conda-forge
+jupyter-manager           0.0.4                    pypi_0    pypi
+jupyter_client            8.6.0              pyhd8ed1ab_0    conda-forge
+jupyter_core              5.5.0           py312h81bd7bf_0    conda-forge
+jupyter_events            0.9.0              pyhd8ed1ab_0    conda-forge
+jupyter_server            2.12.1             pyhd8ed1ab_0    conda-forge
+jupyter_server_terminals  0.5.0              pyhd8ed1ab_0    conda-forge
+jupyterlab                4.0.0                    pypi_0    pypi
+jupyterlab-code-formatter 3.0.2                    pypi_0    pypi
+jupyterlab-execute-time   3.1.2                    pypi_0    pypi
+jupyterlab_pygments       0.3.0              pyhd8ed1ab_0    conda-forge
+jupyterlab_server         2.25.2             pyhd8ed1ab_0    conda-forge
+kiwisolver                1.4.5           py312h389731b_1    conda-forge
+krb5                      1.21.3               h237132a_0    conda-forge
+lcms2                     2.16                 ha0e7c42_0    conda-forge
+lerc                      4.0.0                h9a09cb3_0    conda-forge
+libabseil                 20230802.1      cxx17_h13dd4ca_0    conda-forge
+libaec                    1.1.3                hebf3989_0    conda-forge
+libarrow                  14.0.2           h4646434_1_cpu    conda-forge
+libarrow-acero            14.0.2           h13dd4ca_1_cpu    conda-forge
+libarrow-dataset          14.0.2           h13dd4ca_1_cpu    conda-forge
+libarrow-flight           14.0.2           ha94d253_1_cpu    conda-forge
+libarrow-flight-sql       14.0.2           h39a9b85_1_cpu    conda-forge
+libarrow-gandiva          14.0.2           hf757142_1_cpu    conda-forge
+libarrow-substrait        14.0.2           h7fd9903_1_cpu    conda-forge
+libblas                   3.9.0           20_osxarm64_openblas    conda-forge
+libbrotlicommon           1.1.0                hb547adb_1    conda-forge
+libbrotlidec              1.1.0                hb547adb_1    conda-forge
+libbrotlienc              1.1.0                hb547adb_1    conda-forge
+libcblas                  3.9.0           20_osxarm64_openblas    conda-forge
+libcrc32c                 1.1.2                hbdafb3b_0    conda-forge
+libcurl                   8.7.1                h2d989ff_0    conda-forge
+libcxx                    16.0.6               h4653b0c_0    conda-forge
+libdeflate                1.19                 hb547adb_0    conda-forge
+libedit                   3.1.20191231         hc8eb9b7_2    conda-forge
+libev                     4.33                 h93a5062_2    conda-forge
+libevent                  2.1.12               h2757513_1    conda-forge
+libexpat                  2.5.0                hb7217d7_1    conda-forge
+libffi                    3.4.2                h3422bc3_5    conda-forge
+libgfortran               5.0.0           13_2_0_hd922786_1    conda-forge
+libgfortran5              13.2.0               hf226fd6_1    conda-forge
+libgoogle-cloud           2.12.0               hfb399a7_4    conda-forge
+libgrpc                   1.59.3               h9560976_0    conda-forge
+libiconv                  1.17                 h0d3ecfb_2    conda-forge
+libjpeg-turbo             3.0.0                hb547adb_1    conda-forge
+liblapack                 3.9.0           20_osxarm64_openblas    conda-forge
+libllvm15                 15.0.7               h2621b3d_4    conda-forge
+libnghttp2                1.58.0               ha4dd798_1    conda-forge
+libopenblas               0.3.25          openmp_h6c19121_0    conda-forge
+libparquet                14.0.2           hf6ce1d5_1_cpu    conda-forge
+libpng                    1.6.39               h76d750c_0    conda-forge
+libprotobuf               4.24.4               h810fc01_0    conda-forge
+libre2-11                 2023.09.01           h741fcf5_1    conda-forge
+libsodium                 1.0.18               h27ca646_1    conda-forge
+libsqlite                 3.44.2               h091b4b1_0    conda-forge
+libssh2                   1.11.0               h7a5bd25_0    conda-forge
+libthrift                 0.19.0               h026a170_1    conda-forge
+libtiff                   4.6.0                ha8a6c65_2    conda-forge
+libutf8proc               2.8.0                h1a8c8d9_0    conda-forge
+libwebp-base              1.3.2                hb547adb_0    conda-forge
+libxcb                    1.15                 hf346824_0    conda-forge
+libxml2                   2.12.7               ha661575_1    conda-forge
+libzlib                   1.2.13               h53f4e23_5    conda-forge
+llvm-openmp               17.0.6               hcd81f8e_0    conda-forge
+lsstdesc-gcr-catalogs     1.6.0              pyhd8ed1ab_0    conda-forge
+lz4-c                     1.9.4                hb7217d7_0    conda-forge
+markupsafe                2.1.3           py312h02f2b3b_1    conda-forge
+matplotlib                3.9.2                    pypi_0    pypi
+matplotlib-base           3.8.2           py312hba9b818_0    conda-forge
+matplotlib-inline         0.1.6              pyhd8ed1ab_0    conda-forge
+mistune                   3.0.2              pyhd8ed1ab_0    conda-forge
+multidict                 6.1.0           py312h88e9dfa_0    conda-forge
+munkres                   1.1.4              pyh9f0ad1d_0    conda-forge
+nbclient                  0.8.0              pyhd8ed1ab_0    conda-forge
+nbconvert-core            7.12.0             pyhd8ed1ab_0    conda-forge
+nbformat                  5.9.2              pyhd8ed1ab_0    conda-forge
+ncurses                   6.4                  h463b476_2    conda-forge
+ndcube                    2.2.2                    pypi_0    pypi
+nest-asyncio              1.5.8              pyhd8ed1ab_0    conda-forge
+notebook-shim             0.2.3              pyhd8ed1ab_0    conda-forge
+nptdms                    1.9.0              pyhd8ed1ab_0    conda-forge
+numexpr                   2.10.0          py312h8ae5369_0    conda-forge
+numpy                     2.1.0                    pypi_0    pypi
+opencv-python             4.9.0.80                 pypi_0    pypi
+openjpeg                  2.5.0                h4c1507b_3    conda-forge
+openssl                   3.3.2                h8359307_0    conda-forge
+orc                       1.9.2                h7c018df_0    conda-forge
+overrides                 7.4.0              pyhd8ed1ab_0    conda-forge
+packaging                 24.1                     pypi_0    pypi
+pandas                    2.2.2                    pypi_0    pypi
+pandocfilters             1.5.0              pyhd8ed1ab_0    conda-forge
+parso                     0.8.3              pyhd8ed1ab_0    conda-forge
+pexpect                   4.8.0              pyh1a96a4e_2    conda-forge
+pickleshare               0.7.5                   py_1003    conda-forge
+pillow                    10.4.0                   pypi_0    pypi
+pip                       23.3.1             pyhd8ed1ab_0    conda-forge
+pkgutil-resolve-name      1.3.10             pyhd8ed1ab_1    conda-forge
+platformdirs              4.1.0              pyhd8ed1ab_0    conda-forge
+playsound                 1.3.0              pyhd8ed1ab_0    conda-forge
+pluggy                    1.5.0              pyhd8ed1ab_0    conda-forge
+prometheus_client         0.19.0             pyhd8ed1ab_0    conda-forge
+prompt-toolkit            3.0.42             pyha770c72_0    conda-forge
+psutil                    5.9.5           py312h02f2b3b_1    conda-forge
+pthread-stubs             0.4               h27ca646_1001    conda-forge
+ptyprocess                0.7.0              pyhd3deb0d_0    conda-forge
+pure_eval                 0.2.2              pyhd8ed1ab_0    conda-forge
+py-cpuinfo                9.0.0              pyhd8ed1ab_0    conda-forge
+pyarrow                   14.0.2          py312h14a4a34_1_cpu    conda-forge
+pycparser                 2.21               pyhd8ed1ab_0    conda-forge
+pycurl                    7.45.3                   pypi_0    pypi
+pycurl-requests           0.5.0                    pypi_0    pypi
+pyerfa                    2.0.1.4                  pypi_0    pypi
+pygments                  2.17.2             pyhd8ed1ab_0    conda-forge
+pyobjc-core               10.1            py312h9d22092_0    conda-forge
+pyobjc-framework-cocoa    10.1            py312h9d22092_0    conda-forge
+pyparsing                 3.1.4                    pypi_0    pypi
+pysocks                   1.7.1              pyha2e5f31_6    conda-forge
+pytables                  3.9.2           py312h9aef7b8_1    conda-forge
+pytest                    8.3.3              pyhd8ed1ab_0    conda-forge
+pytest-runner             6.0.0              pyhd8ed1ab_0    conda-forge
+python                    3.12.0          h47c9636_0_cpython    conda-forge
+python-dateutil           2.9.0.post0              pypi_0    pypi
+python-dotenv             1.0.1              pyhd8ed1ab_0    conda-forge
+python-fastjsonschema     2.19.0             pyhd8ed1ab_0    conda-forge
+python-json-logger        2.0.7              pyhd8ed1ab_0    conda-forge
+python-tzdata             2023.3             pyhd8ed1ab_0    conda-forge
+python_abi                3.12                    4_cp312    conda-forge
+pytz                      2024.1                   pypi_0    pypi
+pyvo                      1.5.2                    pypi_0    pypi
+pyyaml                    6.0.2                    pypi_0    pypi
+pyzmq                     25.1.2          py312h1edf716_0    conda-forge
+re2                       2023.09.01           h4cba328_1    conda-forge
+readline                  8.2                  h92ec313_1    conda-forge
+referencing               0.32.0             pyhd8ed1ab_0    conda-forge
+requests                  2.32.3                   pypi_0    pypi
+rfc3339-validator         0.1.4              pyhd8ed1ab_0    conda-forge
+rfc3986-validator         0.1.1              pyh9f0ad1d_0    conda-forge
+rpds-py                   0.13.2          py312h5280bc4_0    conda-forge
+scipy                     1.14.1                   pypi_0    pypi
+semantic-version          2.10.0                   pypi_0    pypi
+send2trash                1.8.2              pyhd1c38e8_0    conda-forge
+setuptools                68.2.2             pyhd8ed1ab_0    conda-forge
+six                       1.16.0             pyh6c4a22f_0    conda-forge
+slack-sdk                 3.27.1             pyha770c72_0    conda-forge
+slack_sdk                 3.27.1               hd8ed1ab_0    conda-forge
+snappy                    1.1.10               hd04f947_1    conda-forge
+sniffio                   1.3.0              pyhd8ed1ab_0    conda-forge
+soupsieve                 2.5                pyhd8ed1ab_1    conda-forge
+specutils                 1.16.0                   pypi_0    pypi
+stack_data                0.6.2              pyhd8ed1ab_0    conda-forge
+terminado                 0.18.0             pyh31c8845_0    conda-forge
+tinycss2                  1.2.1              pyhd8ed1ab_0    conda-forge
+tk                        8.6.13               h5083fa2_1    conda-forge
+tomli                     2.0.1              pyhd8ed1ab_0    conda-forge
+tornado                   6.3.3           py312h02f2b3b_1    conda-forge
+traitlets                 5.14.0             pyhd8ed1ab_0    conda-forge
+types-python-dateutil     2.8.19.14          pyhd8ed1ab_0    conda-forge
+typing-extensions         4.9.0                hd8ed1ab_0    conda-forge
+typing_extensions         4.9.0              pyha770c72_0    conda-forge
+typing_utils              0.1.0              pyhd8ed1ab_0    conda-forge
+tzdata                    2024.1                   pypi_0    pypi
+uri-template              1.3.0              pyhd8ed1ab_0    conda-forge
+urllib3                   2.2.2                    pypi_0    pypi
+wcwidth                   0.2.12             pyhd8ed1ab_0    conda-forge
+webcolors                 1.13               pyhd8ed1ab_0    conda-forge
+webencodings              0.5.1              pyhd8ed1ab_2    conda-forge
+websocket-client          1.7.0              pyhd8ed1ab_0    conda-forge
+wheel                     0.42.0             pyhd8ed1ab_0    conda-forge
+xorg-libxau               1.0.11               hb547adb_0    conda-forge
+xorg-libxdmcp             1.1.3                h27ca646_0    conda-forge
+xz                        5.2.6                h57fd34a_0    conda-forge
+yaml                      0.2.5                h3422bc3_2    conda-forge
+yarl                      1.9.4           py312h024a12e_1    conda-forge
+zeromq                    4.3.5                h965bd2d_0    conda-forge
+zipp                      3.17.0             pyhd8ed1ab_0    conda-forge
+zlib-ng                   2.0.7                h1a8c8d9_0    conda-forge
+zstd                      1.5.5                h4f39d0f_0    conda-forge
