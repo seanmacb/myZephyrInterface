@@ -12,6 +12,7 @@ import requests
 from requests.auth import HTTPBasicAuth
 import warnings
 import asyncio
+from optparse import OptionParser
 # Settings the warnings to be ignored - this is prevalent with the numpydatetime64 object
 warnings.filterwarnings('ignore') 
 base_web_link = "https://s3df.slac.stanford.edu/data/rubin/lsstcam"
@@ -62,7 +63,10 @@ def formatter(execu):
             "CCS Distribution":CCS_distrib,"HV on?":hv,"Zephyr Comments":comments,"Status":status,
             "Web report":"{}/{}/{}/".format(base_web_link,e_num,weekly_dist),"User comments":""}
 
-cutoff_date = np.datetime64("2024-09-14")
+parser = OptionParser()
+parser.add_option("--date","-d",dest='cutoff_date')
+options,args = parser.parse_args()
+cutoff_date = np.datetime64(options.cutoff_date)
 
 first = False
 for block in test_cases_arr:
