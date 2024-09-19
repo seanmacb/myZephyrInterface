@@ -64,7 +64,7 @@ def formatter(execu):
             "Web report":"{}/{}/{}/".format(base_web_link,e_num,weekly_dist),"User comments":""}
 
 parser = OptionParser()
-parser.add_option("--date","-d",dest='cutoff_date')
+parser.add_option("--date","-d",dest='cutoff_date',default="2024-01-01")
 options,args = parser.parse_args()
 cutoff_date = np.datetime64(options.cutoff_date)
 
