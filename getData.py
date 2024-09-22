@@ -1,7 +1,8 @@
 import sys
 import os
-sys.path.append("/Users/sean/Desktop/Repos/ts_planning_tool/")
-sys.path.append("/Users/sean/Desktop/Repos/ts_planning_tool/python/lsst/ts/planning/tool/")
+sys.path.append("/home/smacbride/myZephyrInterface/")
+sys.path.append("/home/smacbride/ts_planning_tool/")
+sys.path.append("/home/smacbride/ts_planning_tool/python/lsst/ts/planning/tool/")
 import cli as zcli
 import zephyr_interface as zint
 import tests
@@ -20,7 +21,7 @@ base_weekly = "w_2024_35"
 
 export_vars = ["ZEPHYR_TOKEN","JIRA_API_TOKEN","JIRA_USERNAME"]
 
-with open('credentials.txt','r') as f:
+with open('/home/smacbride/myZephyrInterface/credentials.txt','r') as f:
     for variables in export_vars:
         line = f.readline()[:-1]
         os.environ[variables] = line
@@ -39,11 +40,11 @@ def formatter(execu):
     e_num = execu['key'][6:]
     date = np.datetime64(execu['actualEndDate'])
     step_config_parse = zepint.parse(execu["testCase"])
-
+    roomLight = execu["customFields"]["Room light condition"]
     name_url = zepint.jira_base_url+"user?accountId="+execu["executedById"]
     name_response = requests.get(name_url,headers=headers,auth=auth)
     shifter = name_response.json()["displayName"]
-    
+    diffuserState = execu["customFields"]["Diffuser installed?"]
     step_config = (step_config_parse)
     E2V_seq = execu["customFields"]["E2V sequencer config"]
     ITL_seq = execu["customFields"]["ITL sequencer config"]
@@ -60,11 +61,12 @@ def formatter(execu):
     return {"Run #":e_num,"Date":date,"Shifter":shifter,
             "step/config":step_config,"E2V Sequencer file":E2V_seq,
             "ITL Sequencer File":ITL_seq,"Corner Sequencer File":Corner_seq,
-            "CCS Distribution":CCS_distrib,"HV on?":hv,"Zephyr Comments":comments,"Status":status,
-            "Web report":"{}/{}/{}/".format(base_web_link,e_num,weekly_dist),"User comments":""}
+            "HV on?":hv,"Diffuser Installed?":diffuserState,"Room light condition":roomLight,
+            "CCS Distribution":CCS_distrib,"Zephyr Comments":comments,"Zephyr status":status,
+            "User comments":"","Web report":"{}/{}/{}/".format(base_web_link,e_num,weekly_dist)}
 
 parser = OptionParser()
-parser.add_option("--date","-d",dest='cutoff_date',default="2024-01-01")
+parser.add_option("--date","-d",dest='cutoff_date',default="2024-09-20")
 options,args = parser.parse_args()
 cutoff_date = np.datetime64(options.cutoff_date)
 
@@ -76,7 +78,8 @@ for block in test_cases_arr:
         for execution in a['values']:
             if (asyncio.run(zepint.parse(execution["testExecutionStatus"])))['name'] != "Not Executed" and np.datetime64(execution['actualEndDate'].split("T")[0])>cutoff_date:
                 result = formatter(execution)
-                result["Status"] = asyncio.run(result["Status"])['name']
+                # print(result)
+                result["Zephyr status"] = asyncio.run(result["Zephyr status"])['name']
                 # result["Shifter"] = await result["Shifter"]
                 result["step/config"] = asyncio.run(result["step/config"])["name"].split(" ")[-1] 
                 if not first:
@@ -84,5 +87,5 @@ for block in test_cases_arr:
                     first=True
                 myDF.loc[len(myDF.index)] =list(result.values())
     print("Finished")
-myDF.sort_values("Date",ascending=False).to_csv("{}/ZephyrRecords.csv".format(os.getcwd()),header=True,index=False)
+myDF.sort_values("Date",ascending=False).to_csv("{}/ZephyrRecords.csv".format("/home/smacbride/myZephyrInterface"),header=True,index=False)
 print("Finished, .csv contains {} entries".format(len(myDF)))
