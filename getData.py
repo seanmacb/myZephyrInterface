@@ -30,6 +30,7 @@ headers = {'Content-Type': 'application/json','Accept': 'application/json'}
 auth = HTTPBasicAuth("seanmacb@umich.edu", os.environ["JIRA_API_TOKEN"])
 zepint = zint.ZephyrInterface(jira_api_token=os.environ["JIRA_API_TOKEN"],jira_username=os.environ["JIRA_USERNAME"])
 zepint.zephyr_api_token = os.environ["ZEPHYR_TOKEN"]
+execution_baseURL = "https://rubinobs.atlassian.net/projects/BLOCK?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/testPlayer/testExecution/BLOCK-"
 
 test_cases_arr = []
 for k in range(13):
@@ -38,6 +39,7 @@ test_cases_arr.append("BLOCK-R95")
 
 def formatter(execu):
     e_num = execu['key'][6:]
+    execution_url = execution_baseURL+e_num
     date = np.datetime64(execu['actualEndDate'])
     step_config_parse = zepint.parse(execu["testCase"])
     roomLight = execu["customFields"]["Room light condition"]
@@ -58,7 +60,7 @@ def formatter(execu):
     if type(comments)!=type(None):
         comments = comments.replace("<br>",", ")
     
-    return {"Run #":e_num,"Date":date,"Shifter":shifter,
+    return {"Run #":e_num,"Date":date,"Shifter":shifter,"Zephyr execution":execution_url,
             "step/config":step_config,"E2V Sequencer file":E2V_seq,
             "ITL Sequencer File":ITL_seq,"Corner Sequencer File":Corner_seq,
             "HV on?":hv,"Diffuser Installed?":diffuserState,"Room light condition":roomLight,
@@ -66,7 +68,7 @@ def formatter(execu):
             "User comments":"","Web report":"{}/{}/{}/".format(base_web_link,e_num,weekly_dist)}
 
 parser = OptionParser()
-parser.add_option("--date","-d",dest='cutoff_date',default="2024-09-20")
+parser.add_option("--date","-d",dest='cutoff_date',default="2024-09-25")
 options,args = parser.parse_args()
 cutoff_date = np.datetime64(options.cutoff_date)
 
