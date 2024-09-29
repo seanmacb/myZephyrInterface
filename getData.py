@@ -36,6 +36,7 @@ test_cases_arr = []
 for k in range(13):
     test_cases_arr.append("BLOCK-R{}".format(66+k))
 test_cases_arr.append("BLOCK-R95")
+test_cases_arr.append("BLOCK-R98")
 
 def formatter(execu):
     e_num = execu['key'][6:]
@@ -68,7 +69,7 @@ def formatter(execu):
             "User comments":"","Web report":"{}/{}/{}/".format(base_web_link,e_num,weekly_dist)}
 
 parser = OptionParser()
-parser.add_option("--date","-d",dest='cutoff_date',default="2024-09-25")
+parser.add_option("--date","-d",dest='cutoff_date',default="2024-09-28")
 options,args = parser.parse_args()
 cutoff_date = np.datetime64(options.cutoff_date)
 
